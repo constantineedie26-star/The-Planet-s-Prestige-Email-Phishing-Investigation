@@ -9,7 +9,7 @@
 | **Sender** | billjobs@microapple[.]com |
 | **Reply-To** | negeja3921@pashter[.]com |
 | **Recipient** | themajoronearth@gmail.com |
-| **Sending Host** | emkei[.]cz |
+| **Sending Host** | emkei.cz |
 | **Source IP** | 93.99.104.210 |
 | **SPF Authentication** | Failed |
 | **Attachment** | PuzzleToCoCanDa.pdf |
@@ -23,7 +23,7 @@
 |--------------|-----------------|
 | **Email Authentication** | SPF validation failed, indicating the sending server was unauthorized to send email on behalf of the claimed domain. |
 | **Sender Analysis** | Sender and Reply-To addresses originated from different domains, suggesting possible spoofing. |
-| **Origin** | Email was traced to **emkei[.]cz** (**93.99.104.210**). |
+| **Origin** | Email was traced to **emkei.cz** (**93.99.104.210**). |
 | **Encoding** | Both the email body and attachment were Base64 encoded to conceal their contents. |
 | **Attachment Analysis** | The attachment appeared to be a PDF but was identified as a ZIP archive through file signature verification (`50 4B 03 04`). |
 | **Recovered Files** | `DaughtersCrown` (JPEG), `GoodJobMajor` (PDF), and a hidden spreadsheet `Money.xlsx`. |
@@ -52,7 +52,7 @@ This investigation demonstrates how phishing campaigns leverage spoofed identiti
 | **Who** | The phishing campaign targeted **themajoronearth@gmail.com** using a spoofed sender (**billjobs@microapple[.]com**) and a different Reply-To address to disguise the attacker's identity. |
 | **What** | A phishing email delivered a disguised ZIP archive masquerading as a PDF, containing hidden files and encoded information. |
 | **When** | January 26, 2021, at **1:41:18 AM EST**. No additional malicious activity was identified after delivery. |
-| **Where** | The email originated from **emkei[.]cz (93.99.104.210)** and the hidden evidence referenced **The Martian Colony, Beside Interplanetary Spaceport**. |
+| **Where** | The email originated from **emkei.cz (93.99.104.210)** and the hidden evidence referenced **The Martian Colony, Beside Interplanetary Spaceport**. |
 | **Why** | The attacker used a fake ransom narrative to mislead the recipient while concealing the true objective through multiple layers of obfuscation. |
 | **How** | The attack combined failed SPF authentication, sender spoofing, Base64 encoding, disguised file extensions, hidden spreadsheet data, and manipulated document metadata to evade detection. |
 
