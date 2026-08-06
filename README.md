@@ -1,4 +1,4 @@
-# 📧 The Planet's Prestige – Email Phishing Investigation
+# 📧 The Planet's Prestige-Email Phishing Investigation
 
 ## 📌 Findings
 
