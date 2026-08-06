@@ -17,18 +17,6 @@
 | **Document Author Metadata** | Pestero Negeja *(Metadata alone cannot verify identity)* |
 | **Recovered Location** | The Martian Colony, Beside Interplanetary Spaceport |
 
-### 🔍 Additional Findings
-
-| **Analysis** | **Observation** |
-|--------------|-----------------|
-| **Email Authentication** | SPF validation failed, indicating the sending server was unauthorized to send email on behalf of the claimed domain. |
-| **Sender Analysis** | Sender and Reply-To addresses originated from different domains, suggesting possible spoofing. |
-| **Origin** | Email was traced to **emkei.cz** (**93.99.104.210**). |
-| **Encoding** | Both the email body and attachment were Base64 encoded to conceal their contents. |
-| **Attachment Analysis** | The attachment appeared to be a PDF but was identified as a ZIP archive through file signature verification (`50 4B 03 04`). |
-| **Recovered Files** | `DaughtersCrown` (JPEG), `GoodJobMajor` (PDF), and a hidden spreadsheet `Money.xlsx`. |
-| **Hidden Evidence** | The concealed spreadsheet contained Base64-encoded data revealing the final location. |
-
 ---
 
 # 📝 Investigation Summary
@@ -57,6 +45,19 @@ This investigation demonstrates how phishing campaigns leverage spoofed identiti
 | **How** | The attack combined failed SPF authentication, sender spoofing, Base64 encoding, disguised file extensions, hidden spreadsheet data, and manipulated document metadata to evade detection. |
 
 ---
+
+### 🔍 Additional Findings
+
+| **Analysis** | **Observation** |
+|--------------|-----------------|
+| **Email Authentication** | SPF validation failed, indicating the sending server was unauthorized to send email on behalf of the claimed domain. |
+| **Sender Analysis** | Sender and Reply-To addresses originated from different domains, suggesting possible spoofing. |
+| **Origin** | Email was traced to **emkei.cz** (**93.99.104.210**). |
+| **Encoding** | Both the email body and attachment were Base64 encoded to conceal their contents. |
+| **Attachment Analysis** | The attachment appeared to be a PDF but was identified as a ZIP archive through file signature verification (`50 4B 03 04`). |
+| **Recovered Files** | `DaughtersCrown` (JPEG), `GoodJobMajor` (PDF), and a hidden spreadsheet `Money.xlsx`. |
+| **Hidden Evidence** | The concealed spreadsheet contained Base64-encoded data revealing the final location. |
+
 
 # 🛡️ Recommendations
 
